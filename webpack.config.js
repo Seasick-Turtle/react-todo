@@ -17,7 +17,7 @@ module.exports = {
     './app/app.jsx'
   ],
   externals: {
-    jquery: 'jQuery'
+    jquery: 'jQuery',
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -56,8 +56,9 @@ module.exports = {
       app: 'app',
       applicationStyles: 'app/styles/app.scss',
       actions: 'app/actions/actions.jsx',
-      reducers: 'app/reducers/reducers.jsx',
-      configureStore: 'app/store/configureStore.jsx'
+      configureStore: 'app/store/configureStore.jsx',
+      Login: 'app/components/Login.jsx',
+      reducers: 'app/reducers/reducers.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
